@@ -66,8 +66,6 @@ plt.ylabel('Count')
 plt.grid(True)
 plt.show()
 
-
-
 # Agrupar por mes y sentimiento
 sentiment_by_month = df.groupby([df['date'].dt.to_period('M'), 'sentiment_label']).size().unstack(fill_value=0)
 
@@ -81,7 +79,6 @@ plt.xlabel('Mes')
 plt.ylabel('Recuento')
 plt.grid(True)
 plt.show()
-
 
 # Agrupar por mes y sentimiento
 sentiment_by_month = df.groupby([df['date'].dt.to_period('M'), 'sentiment_label']).size().unstack(fill_value=0)
